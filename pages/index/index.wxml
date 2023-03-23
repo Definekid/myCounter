@@ -1,4 +1,33 @@
 <!--index.wxml-->
 <view class="container">
-  Weixin
+  <text class="showRe">
+  <block>
+    {{num}}
+  </block>
+  <block>
+    {{op}}
+  </block>
+    
+  </text>
+  <view class="num">
+    <view data-val="C" bindtap="resetBtn">C</view>
+    <view data-val="/" bindtap="opBtn">/</view>
+    <view data-val="*" bindtap="opBtn">*</view>
+    <view data-val="x" bindtap="deleBtn">x</view>
+    <view data-val="7" bindtap="numBtn">7</view>
+    <view data-val="8" bindtap="numBtn">8</view>
+    <view data-val="9" bindtap="numBtn">9</view>
+    <view data-val="-" bindtap="opBtn">-</view>
+    <view data-val="4" bindtap="numBtn">4</view>
+    <view data-val="5" bindtap="numBtn">5</view>
+    <view data-val="6" bindtap="numBtn">6</view>
+    <view data-val="+" bindtap="opBtn">+</view>
+    <view data-val="1" bindtap="numBtn">1</view>  
+    <view data-val="2" bindtap="numBtn">2</view>
+    <view data-val="3" bindtap="numBtn">3</view>
+    <view data-val="=" bindtap="opBtn" class="eq">=</view>
+    <view data-val="%" bindtap="opBtn">%</view>
+    <view data-val="0"  bindtap="numBtn">0</view>
+    <view data-val="." bindtap="dotBtn">.</view>
+  </view>
 </view>
